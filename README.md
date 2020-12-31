@@ -1656,13 +1656,13 @@ Java 程序在运行时，需要在内存中分配空间。为了提高运算效
   数组在初始化时，会为存储空间添加默认值
 
    	整数：0
-
+ 	
    	浮点数：0.0
-
+ 	
    	布尔：false
-
+ 	
    	字符：空字符
-
+ 	
    	引用数据类型：null
 
   每一个new出来的东西都有一个地址值
@@ -1674,6 +1674,8 @@ Java 程序在运行时，需要在内存中分配空间。为了提高运算效
 ##### 2.10.6.1 遍历
 
 [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/array/ArrayTraversal.java)
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/method/ArrayTraversalMethod.java)
 
 ```java
 public class ArrayTest01 {
@@ -1698,6 +1700,8 @@ arr.length
 ##### 2.10.6.3 数组最值
 
 [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/array/ArrayMinMax.java)
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/method/MaxArrayMethod.java)
 
 最大值获取：从数组的所有元素中找出最大值。
 实现思路：
@@ -1729,6 +1733,267 @@ public class ArrayTest02 {
 ```
 
 ### 2.11 方法
+
+#### 2.11.1 方法概述
+
+方法（method）是将具有独立功能的代码块组织成为一个整体，使其具有特殊功能的代码集
+
+![image-20201231153808065](./image/image-20201231153808065.png)
+
+![image-20201231153857017](./image/image-20201231153857017.png)
+
+注意：
+
+- 方法必须先创建才可以使用，该过程称为方法定义
+
+- 方法创建后并不是直接运行的，需要手动使用后才执行，该过程称为方法调用
+
+#### 2.11.2 方法的定义和调用
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/method/MethodDefined2.java)
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/method/MethodDefined1.java)
+
+定义格式： public static void 名 ( ) {
+
+​    //方法体
+
+ }
+
+```java
+范例：public static void isEvenNumber() {
+     //方法体
+ }
+```
+
+调用格式： 方法名 ( ) ;
+
+```java
+范例： isEvenNumber( ) ;
+```
+
+**注意：**
+
+方法必须先定义后调用，否则程序将报错
+
+#### 2.11.3 带参数方法的定义和调用
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/method/MethodArgs1.java)
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/method/MethodArgs2.java)
+
+格式：public static void 方法名 ( 参数 ) { … … }
+
+```java
+格式（单个参数）：public static void 方法名      ( 数据类型 变量名 ) { … … }
+范例（单个参数）：public static void isEvenNumber(int number) { … … }
+
+格式（多个参数）：public static void 方法名 ( 数据类型 变量名1 ，数据类型 变量名2 ，…… ) { … … }
+范例（多个参数）：public static void getMax(int number1 ，int number2 ) { … … }
+```
+
+**注意：**
+
+方法定义时，参数中的数据类型与变量名都不能缺少，缺少任意一个程序将报错
+
+方法定义时，多个参数之间使用逗号( ，)分隔
+
+**带参数方法调用**
+
+格式： 方法名 ( 参数 ) ;
+
+```java
+格式（单个参数）： 方法名 ( 变量名/常量值 ) ;
+范例（单个参数）： isEvenNumber（ 5 ） ;
+格式（多个参数）： 方法名 ( 变量名1/常量值1 ，变量名2/常量值2 ) ;
+范例（多个参数）： getMax （ 5，6 ） ; 
+```
+
+**注意：**
+
+方法调用时，参数的数量与类型必须与方法定义中的设置相匹配，否则程序将报错
+
+`形参和实参`
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/method/MethodArgs1.java)
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/method/MethodArgsS.java)
+
+形参：方法定义中的参数等同于变量定义格式，例如：int number
+
+实参：方法调用中的参数等同于使用变量或常量，例如： 10 number
+
+![image-20201231154512591](./image/image-20201231154512591.png)
+
+调用过程图解
+
+![image-20201231155847783](./image/image-20201231155847783.png)
+
+总结：每个方法在被调用执行的时候，都会进入栈内存，并且拥有自己独立的内存空间，方法内部代码调用完毕之后，会从栈内存中弹栈消失。
+
+#### 2.11.4 带返回值方法的定义和调用
+
+1. 带返回值方法定义
+
+格式：public static 数据类型       方法名 ( 参数 ) { 
+
+​    	return数据 ;
+
+ }
+
+```java
+范例1
+    public static boolean isEvenNumber(int  number ) {
+        return true;
+ }
+范例2：
+    public static int getMax(int a,int b ) {
+        return 100;
+ }
+```
+
+**注意：**
+
+方法定义时return后面的返回值与方法定义上的数据类型要匹配，否则程序将报错
+
+2. 带返回值方法调用
+
+```jade
+格式1： 
+方法名 ( 参数 ) ;
+范例： 
+isEvenNumber ( 5 ) ;
+格式2： 
+数据类型 变量名 = 方法名 ( 参数 ) ;
+范例： 
+boolean flag = isEvenNumber ( 5 ); 
+```
+
+**注意：**
+
+方法的返回值通常会使用变量接收，否则该返回值将无意义
+
+#### 2.11.5 方法的注意事项
+
+1. 方法不能嵌套定义
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/method/MethodNested.java)
+
+![image-20201231154845614](./image/image-20201231154845614.png)
+
+2. void表示无返回值，可以省略return，也可以单独的书写return，后面不加数据
+
+![image-20201231154929609](./image/image-20201231154929609.png)
+
+3. 方法的通用格式
+
+```java
+格式：
+    public static 返回值类型 方法名(参数) {
+   		方法体; 
+   		return 数据 ;
+ }
+```
+
+| public static |                            修饰符                            |
+| :-----------: | :----------------------------------------------------------: |
+|  返回值类型   | 方法操作完毕之后返回的数据的数据类型。如果方法操作完毕，没有数据返回，这里写void，而且方法体中一般不写return |
+|    方法名     |                    调用方法时候使用的标识                    |
+|     参数      |        由数据类型和变量名组成，多个参数之间用逗号隔开        |
+|    方法体     |                       完成功能的代码块                       |
+|    return     |     如果方法操作完毕，有数据返回，用于把数据返回给调用者     |
+
+定义方法时，要做到两个明确
+
+- 明确返回值类型：主要是明确方法操作完毕之后是否有数据返回，如果没有，写void；如果有，写对应的数据类型
+- 明确参数：主要是明确参数的类型和数量
+
+调用方法时
+
+- void类型的方法，直接调用即可
+- 非void类型的方法，推荐用变量接收调用
+
+#### 2.11.6 方法重载
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/method/MethodOverload1.java)
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/method/MethodOverload2.java)
+
+方法重载指同一个类中定义的多个方法之间的关系，满足下列条件的多个方法相互构成重载
+
+- 多个方法在同一个类中
+- 多个方法具有相同的方法名
+- 多个方法的参数不相同，类型不同或者数量不同
+
+![image-20201231155418683](./image/image-20201231155418683.png)
+
+重载仅对应方法的定义，与方法的调用无关，调用方式参照标准格式
+
+重载仅针对同一个类中方法的名称与参数进行识别，与返回值无关，换句话说不能通过返回值来判定两个方法是否相互构成重载
+
+![image-20201231155509444](./image/image-20201231155509444.png)
+
+正确范例：
+
+```java
+public class MethodDemo {
+	public static void fn(int a) {
+	//方法体
+		}
+	public static int fn(double a) {
+	//方法体
+	}
+}
+public class MethodDemo {
+	public static float fn(int a) {
+	//方法体
+	}
+	public static int fn(int a , int b) {
+	//方法体
+	}
+}
+```
+
+错误范例：
+
+```java
+public class MethodDemo {
+	public static void fn(int a) {
+	//方法体
+	}
+	public static int fn(int a) { /*错误原因：重载与返回值无关*/
+	//方法体
+	}
+}
+public class MethodDemo01 {
+	public static void fn(int a) {
+	//方法体
+	}
+}
+public class MethodDemo02 {
+	public static int fn(double a) { /*错误原因：这是两个类的两个fn方法*/
+	//方法体
+	}
+}
+```
+
+
+
+#### 2.11.7 方法的参数传递
+
+对于基本数据类型的参数，形式参数的改变，不影响实际参数的值
+
+结论依据：
+每个方法在栈内存中，都会有独立的栈空间，方法运行结束后就会弹栈消失
+
+![image-20201231160231249](./image/image-20201231160231249.png)
+
+对于引用类型的参数，形式参数的改变，影响实际参数的值
+
+结论依据：
+引用数据类型的传参，传入的是地址值，内存中会造成两个引用指向同一个内存的效果，所以即使方法弹栈，堆内存中的数据也已经是改变后的结果
+
+![image-20201231160301938](./image/image-20201231160301938.png)
 
 ### 2.12 数据输入
 
