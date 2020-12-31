@@ -4,11 +4,11 @@ import java.util.Scanner;
 
 /**
  * @author : zgf
- * @file : BranchingStructure.java
+ * @file : BranchingStructureIf.java
  * @brief : 分支结构
  */
 
-public class BranchingStructure {
+public class BranchingStructureIf {
     public static void main(String[] args) {
 //        格式 1
         System.out.println("开始");
