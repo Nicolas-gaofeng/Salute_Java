@@ -214,7 +214,7 @@ JDK、JRE和JVM的关系：
 
 点击确定后，系统变量中会出现一条新的记录。
 
-![img](./\image/1.6.2.5.jpg)
+![img](./image/1.6.2.5.jpg)
 
 5、 然后选中“系统变量”中的“Path”变量，点击“编辑”按钮，将刚才创建的JAVA_HOME变量添加到“Path”变量中。
 
@@ -477,7 +477,7 @@ iml文件:是idea自动创建的模块文件，存储着当前模块的一些配
 
 ### 2.1 HelloWorld
 
-[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/java_basic_01/first_java_01/HelloWorld.java)
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/helloworld/HelloWorld.java)
 
 HelloWorld案例是指在计算机屏幕上输出“HelloWorld”这行文字。各种计算机语言都习惯使用该案例作为第一个演示案例。
 
@@ -504,6 +504,8 @@ HelloWorld案例的编译和运行
 
 ### 2.2 Bug
 
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/bug/JavaBug.java)
+
 在电脑系统或程序中，隐藏着的一些未被发现的缺陷或问题统称为bug（漏洞）。
 
 常见问题
@@ -517,7 +519,7 @@ HelloWorld案例的编译和运行
 
 ### 2.3 注释
 
-[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/java_basic_01/notes_java_03/notes_java.java)
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/notes/JavaNotes.java)
 
 注释是对代码的解释和说明文字，可以提高程序的可读性，因此在程序中添加必要的注释文字十分重要。
 
@@ -625,6 +627,8 @@ Java是一个强类型语言，Java中的数据必须明确数据类型，不同
 
 #### 2.5.4 类型转换
 
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/conversion/JavaConversion.java)
+
 在Java中，一些数据类型之间是可以相互转换的。分为两种情况：自动类型转换和强制类型转换。
 
 ##### 2.5.4.1 自动类型转换
@@ -678,7 +682,7 @@ byte b3 = (byte) (b1 + b2);
 
 ### 2.6 常量
 
-[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/java_basic_01/constant_java_04/ConstantDemo.java)
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/constant/JavaConstant.java)
 
 在日常生活中，我们通常都用3.14代表圆周率去进行近似计算。只要用到圆周率的地方，我们使用的都是3.14，也就是说，这个值是固定不变的，这样的值就是我们说的常量。
 
@@ -699,7 +703,7 @@ byte b3 = (byte) (b1 + b2);
 
 ### 2.7 变量
 
-[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/java_basic_01/variable_java_05/VariableDemo01.java)
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/variable/JavaVariable.java)
 
 #### 2.7.1 变量的定义
 
@@ -755,19 +759,574 @@ System.out.println(d);
 3. 定义long类型的变量时，需要在整数的后面加L（大小写均可，建议大写）。因为整数默认是int类型，整数太大可能超出int范围。
 4. 定义float类型的变量时，需要在小数的后面加F（大小写均可，建议大写）。因为浮点数的默认类型是double， double的取值范围是大于float的，类型不兼容。
 
+### 2.8 运算符
+
+运算符：对常量或者变量进行操作的符号
+
+表达式：用运算符把常量或者变量连接起来符合java语法的式子就可以称为表达式。不同运算符连接的表达式体现的是不同类型的表达式。
+
+举例说明：
+
+```java
+ int a = 10;
+ int b = 20;
+ int c = a + b;
+```
+
++：是运算符，并且是算术运算符
+
+a + b：是表达式，由于 + 是算术运算符，所以这个表达式叫算术表达式
+
+#### 2.8.1 算术运算符
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/operator/ArithmeticOperators.java)
+
+| 符号 | 作用 |             说明             |
+| :--: | :--: | :--------------------------: |
+|  +   |  加  |        参看小学一年级        |
+|  -   |  减  |        参看小学一年级        |
+|  *   |  乘  |  参看小学二年级，与"×"相同   |
+|  /   |  除  |  参看小学二年级，与"÷"相同   |
+|  %   | 取余 | 获取的是两个数据做除法的余数 |
+
+注意事项：
+
+1. / 和 % 的区别：两个数据做除法，/ 取结果的商，% 取结果的余数。
+2. 整数操作只能得到整数，要想得到小数，必须有浮点数参与运算。
+3. 字符的 "+" 操作：
+
+拿字符在计算机底层对应的数值来进行计算的
+
+![image-20201231112634331](./image/image-20201231112634331.png)
+
+'a' -- 97 a-z是连续的，所以'b'对应的数值是98，'c'是99，依次递加
+'A' -- 65 A-Z是连续的，所以'B'对应的数值是66，'C'是67，依次递加
+'0' -- 48 0-9是连续的，所以'1'对应的数值是49，'2'是50，依次递加
+
+```java
+// 可以通过使用字符与整数做算术运算，得出字符对应的数值是多少
+char ch1 = 'a';
+System.out.println(ch1 + 1); // 输出98，97 + 1 = 98
+char ch2 = 'A';
+System.out.println(ch2 + 1); // 输出66，65 + 1 = 66
+char ch3 = '0';
+System.out.println(ch3 + 1); // 输出49，48 + 1 = 49
+```
+
+算术表达式中包含多个基本数据类型的值的时候，整个算术表达式的类型会自动进行提升。
+
+提升规则：
+
+- byte类型，short类型和char类型将被提升到int类型
+
+- 整个表达式的类型自动提升到表达式中最高等级操作数同样的类型
+
+​    等级顺序：byte,short,char -> int -> long -> float -> double
+
+```java
+byte b1 = 10;
+byte b2 = 20;
+// byte b3 = b1 + b2; // 该行报错，因为byte类型参与算术运算会自动提示为int，int赋值给byte可能损失精度
+int i3 = b1 + b2; // 应该使用int接收
+byte b3 = (byte) (b1 + b2); // 或者将结果强制转换为byte类型
+int num1 = 10;
+double num2 = 20.0;
+double num3 = num1 + num2; // 使用double接收，因为num1会自动提升为double类型
+```
+
+tips：正是由于上述原因，所以在程序开发中我们很少使用byte或者short类型定义整数。也很少会使用char类型定义字符，而使用字符串类型，更不会使用char类型做算术运算。
+
+当 "+" 操作中出现字符串时，这个 "+" 是字符串连接符，而不是算术运算。
+
+```java
+System.out.println("itheima"+ 666); // 输出：itheima666
+```
+
+在 "+" 操作中，如果出现了字符串，就是连接运算符，否则就是算术运算。当连续进行 "+" 操作时，从左到右逐个执行。
+
+```java
+System.out.println(1 + 99 + "年黑马"); // 输出：199年黑马
+System.out.println(1 + 2 + "itheima" + 3 + 4); // 输出：3itheima34
+// 可以使用小括号改变运算的优先级
+System.out.println(1 + 2 + "itheima" + (3 + 4)); // 输出：3itheima7
+```
+
+#### 2.8.2 赋值运算符
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/operator/AssignmentOperators.java)
+
+| 符号 |    作用    |            说明            |
+| :--: | :--------: | :------------------------: |
+|  =   |    赋值    | a = 10，将 10 赋值给变量a  |
+|  +=  |  加后赋值  |  a += b，将 a + b 的值给a  |
+|  -=  |  减后赋值  |  a -= b，将 a - b 的值给a  |
+|  *=  |  乘后赋值  |  a *= b，将 a × b 的值给a  |
+|  /=  |  除后赋值  |  a /= b，将 a ÷ b 的商给a  |
+|  %=  | 取余后赋值 | a %= b，将a ÷  b 的余数给a |
+
+**注意事项：**
+
+扩展的赋值运算符隐含了强制类型转换
+
+```java
+short s = 10;
+s = s + 10; // 此行代码报出，因为运算中s提升为int类型，运算结果int赋值给short可能损失精度
+s += 10; // 此行代码没有问题，隐含了强制类型转换，相当于 s = (short) (s + 10);
+```
+
+#### 2.8.3 自增自减运算符
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/operator/SelfIncreasingDecreasingOperators.java)
+
+| 符号 | 作用 |    说明     |
+| :--: | :--: | :---------: |
+|  ++  | 自增 | 变量的值加1 |
+|  --  | 自减 | 变量的值减1 |
+
+**注意事项：**
+
+- ++ 和 -- 既可以放在变量的后边，也可以放在变量的前边。
+- 单独使用的时候， ++ 和 -- 无论是放在变量的前边还是后边，结果是一样的。
+- 参与操作的时候，如果放在变量的后边，先拿变量参与操作，后拿变量做 ++ 或者 --。
+- 参与操作的时候，如果放在变量的前边，先拿变量做 ++ 或者 --，后拿变量参与操作。
+- 最常见的用法：单独使用
+
+```java
+int i = 10;
+i++; // 单独使用
+System.out.println("i:" + i); // i:11
+int j = 10;
+++j; // 单独使用
+System.out.println("j:" + j); // j:11
+int x = 10;
+int y = x++; // 赋值运算，++在后边，所以是使用x原来的值赋值给y，x本身自增1
+System.out.println("x:" + x + ", y:" + y); // x:11，y:10
+int m = 10;
+int n = ++m; // 赋值运算，++在前边，所以是使用m自增后的值赋值给n，m本身自增1
+System.out.println("m:" + m + ", m:" + m); // m:11，m:11
+```
+
+练习：
+
+```java
+int x = 10;
+int y = x++ + x++ + x++;
+System.out.println(y); // y的值是多少？
+/*
+解析，三个表达式都是++在后，所以每次使用的都是自增前的值，但程序自左至右执行，所以第一次自增时，使用的是
+10进行计算，但第二次自增时，x的值已经自增到11了，所以第二次使用的是11，然后再次自增。。。
+所以整个式子应该是：int y = 10 + 11 + 12;
+输出结果为33。
+*/
+注意：通过此练习深刻理解自增和自减的规律，但实际开发中强烈建议不要写这样的代码！小心挨打！
+```
+
+#### 2.8.4 关系运算符
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/operator/RelationalOperators.java)
+
+| 符号 |                             说明                             |
+| :--: | :----------------------------------------------------------: |
+|  ==  | a == b，判断 a 和 b 的值是否相等，成立为true，不成立为false  |
+|  !=  | a != b，判断 a 和 b 的值是否不相等，成立为true，不成立为false |
+|  >   |     a > b，判断 a 是否大于 b，成立为true，不成立为false      |
+|  >=  |   a >= b，判断 a 是否大于等于 b，成立为true，不成立为false   |
+|  <   |     a < b，判断 a 是否小于 b，成立为true，不成立为false      |
+|  <=  |   a <= b，判断 a 是否小于等于 b，成立为true，不成立为false   |
+
+**注意事项：**
+
+关系运算符的结果都是boolean类型，要么是true，要么是false。
+
+千万不要把 "==" 误写成 "="。
+
+```java
+int a = 10;
+int b = 20;
+System.out.println(a == b); // false
+System.out.println(a != b); // true
+System.out.println(a > b); // false
+System.out.println(a >= b); // false
+System.out.println(a < b); // true
+System.out.println(a <= b); // true
+// 关系运算的结果肯定是boolean类型，所以也可以将运算结果赋值给boolean类型的变量
+boolean flag = a > b;
+System.out.println(flag); // 输出false
+```
+
+#### 2.8.5 逻辑运算符
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/operator/LogicalOperators.java)
+
+逻辑运算符把各个运算的关系表达式连接起来组成一个复杂的逻辑表达式，以判断程序中的表达式是否成立，判断的结果是 true 或 false。
+
+在数学中，一个数据x，大于3，小于6，我们可以这样来进行表示： 3<x<6 。
+
+在Java中，需要把上面的式子先进行拆解，再进行合并表达。
+
+拆解为： x > 3 和 x < 6 
+
+合并后： x > 3 && x < 6 
+
+&& 其实就是一个逻辑运算符。
+
+我们可以这样说，逻辑运算符，是用来连接关系表达式的运算符。当然，逻辑运算符也可以直接连接布尔类型的常量或者变量。
+
+| 符号 |   作用   |                       说明                        |
+| :--: | :------: | :-----------------------------------------------: |
+|  &   |  逻辑与  |  a & b，a 和 b 都是true，结果为true，否则为false  |
+|  \|  |  逻辑或  | a \| b，a 和 b 都是false，结果为false，否则为true |
+|  ^   | 逻辑异或 |     a ^ b，a 和 b 结果不同为true，相同为false     |
+|  !   |  逻辑非  |            !a，结果和 a 的结果正好相反            |
+
+```java
+//定义变量
+int i = 10;
+int j = 20;
+int k = 30;
+//& “与”，并且的关系，只要表达式中有一个值为false，结果即为false
+System.out.println((i > j) & (i > k)); //false & false,输出false
+System.out.println((i < j) & (i > k)); //true & false,输出false
+System.out.println((i > j) & (i < k)); //false & true,输出false
+System.out.println((i < j) & (i < k)); //true & true,输出true
+System.out.println("--------");
+//| “或”，或者的关系，只要表达式中有一个值为true，结果即为true
+System.out.println((i > j) | (i > k)); //false | false,输出false
+System.out.println((i < j) | (i > k)); //true | false,输出true
+System.out.println((i > j) | (i < k)); //false | true,输出true
+System.out.println((i < j) | (i < k)); //true | true,输出true
+System.out.println("--------");
+//^ “异或”，相同为false，不同为true
+System.out.println((i > j) ^ (i > k)); //false ^ false,输出false
+System.out.println((i < j) ^ (i > k)); //true ^ false,输出true
+System.out.println((i > j) ^ (i < k)); //false ^ true,输出true
+System.out.println((i < j) ^ (i < k)); //true ^ true,输出false
+System.out.println("--------");
+//! “非”，取反
+System.out.println((i > j)); //false
+System.out.println(!(i > j)); //!false，,输出true
+```
+
+**短路逻辑运算符**
+
+| 符号 |  作用  |             说明             |
+| :--: | :----: | :--------------------------: |
+|  &&  | 短路与 | 作用和&相同，但是有短路效果  |
+| \|\| | 短路或 | 作用和\|相同，但是有短路效果 |
+
+在逻辑与运算中，只要有一个表达式的值为false，那么结果就可以判定为false了，没有必要将所有表达式的值都计算出来，短路与操作就有这样的效果，可以提高效率。同理在逻辑或运算中，一旦发现值为true，右边的表达式将不再参与运算。
+
+**注意事项：**
+
+- 逻辑与 & ，无论左边真假，右边都要执行。
+- 短路与 && ，如果左边为真，右边执行；如果左边为假，右边不执行。
+- 逻辑或 | ，无论左边真假，右边都要执行。
+- 短路或 || ，如果左边为假，右边执行；如果左边为真，右边不执行。
+- 最常用的逻辑运算符：&&，||，!
+
+```java
+int x = 3;
+int y = 4;
+System.out.println((x++ > 4) & (y++ > 5)); // 两个表达都会运算
+System.out.println(x); // 4
+System.out.println(y); // 5
+System.out.println((x++ > 4) && (y++ > 5)); // 左边已经可以确定结果为false，右边不参与运算
+System.out.println(x); // 4
+System.out.println(y); // 4
+```
+
+#### 2.8.6 三元运算符
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/operator/TernaryOperators.java)
+
+```java
+格式：关系表达式 ? 表达式1 : 表达式2
+```
+
+范例：a > b ? a : b
+
+计算规则：
+
+1. 首先计算关系表达式的值
+2. 如果值为true，表达式1的值就是运算结果
+3. 如果值为false，表达式2的值就是运算结果
+
+```java
+int a = 10;
+int b = 20;
+int c = a > b ? a : b; // 判断 a>b 是否为真，如果为真取a的值，如果为假，取b的值
+```
+
+### 2.9 流程控制
+
+在一个程序执行的过程中，各条语句的执行顺序对程序的结果是有直接影响的。所以，我们必须清楚每条语句的执行流程。而且，很多时候要通过控制语句的执行顺序来实现我们想要的功能。
+
+![image-20201231115145162](./image/image-20201231115145162.png)
 
 
 
+![image-20201231115210731](./image/image-20201231115210731.png)
+
+#### 2.9.1 顺序结构
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/processcontrol/SequentialStructure.java)
+
+顺序结构是程序中最简单最基本的流程控制，没有特定的语法结构，按照代码的先后顺序，依次执行，程序中大多数的代码都是这样执行的。
+
+顺序结构执行流程图：
+
+![image-20201231115425777](./image/image-20201231115425777.png)
+
+#### 2.9.2 分支结构
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/processcontrol/BranchingStructure.java)
+
+##### 2.9.2.1 if语句
+
+1. if语句格式 1
+
+   ```java
+   格式：
+   if (关系表达式) {
+     语句体; 
+   }
+   ```
+
+执行流程：
+
+① 首先计算关系表达式的值
+
+② 如果关系表达式的值为true就执行语句体
+
+③ 如果关系表达式的值为false就不执行语句体
+
+④ 继续执行后面的语句内容
+
+![image-20201231115806037](./image/image-20201231115806037.png)
+
+```java
+public class IfDemo {
+    public static void main(String[] args) {
+		System.out.println("开始");
+		//定义两个变量
+		int a = 10;
+		int b = 20;
+		//需求：判断a和b的值是否相等，如果相等，就在控制台输出：a等于b
+		if(a == b) {
+			System.out.println("a等于b");
+			}
+		//需求：判断a和c的值是否相等，如果相等，就在控制台输出：a等于c
+		int c = 10;
+		if(a == c) {
+			System.out.println("a等于c");
+		}
+		System.out.println("结束");
+	}
+}
+```
+
+2.  if 语句格式 2
+
+```java
+格式：
+if (关系表达式) {
+  语句体1; 
+} else {
+  语句体2; 
+}
+```
+
+执行流程：
+
+① 首先计算关系表达式的值
+
+② 如果关系表达式的值为true就执行语句体1
+
+③ 如果关系表达式的值为false就执行语句体2
+
+④ 继续执行后面的语句内容
+
+![image-20201231115914030](./image/image-20201231115914030.png)
+
+```java
+public class IfDemo02 {
+	public static void main(String[] args) {System.out.println("开始");
+		//定义两个变量
+		int a = 10;
+		int b = 20;
+		b = 5;
+		//需求：判断a是否大于b，如果是，在控制台输出：a的值大于b，否则，在控制台输出：a的值不大于b
+		if(a > b) {
+			System.out.println("a的值大于b");
+		} else {
+			System.out.println("a的值不大于b");
+		}
+		System.out.println("结束");
+	}
+}   
+```
 
 
 
-运算符
+3. if 语句格式 3 
 
-流程控制
+```java
+格式：
+if (关系表达式1) {
+  语句体1; 
+} else if (关系表达式2) {
+  语句体2; 
+} 
+…
+else {
+  语句体n+1;
+}
+```
+
+执行流程：
+
+① 首先计算关系表达式1的值
+
+② 如果值为true就执行语句体1；如果值为false就计算关系表达式2的值
+
+③ 如果值为true就执行语句体2；如果值为false就计算关系表达式3的值
+
+④ …
+
+⑤ 如果没有任何关系表达式为true，就执行语句体n+1。
+
+![image-20201231120054985](./image/image-20201231120054985.png)
+
+示例：键盘录入一个星期数(1,2,...7)，输出对应的星期一，星期二，...星期日
+
+```java
+import java.util.Scanner;
+public class IfDemo03 {
+	public static void main(String[] args) {
+		System.out.println("开始");
+		// 需求：键盘录入一个星期数(1,2,...7)，输出对应的星期一，星期二，...星期日
+		Scanner sc = new Scanner(System.in);
+		System.out.println("请输入一个星期数(1-7)：");
+		int week = sc.nextInt();
+		if(week == 1) {
+			System.out.println("星期一");
+         } else if(week == 2) {
+			System.out.println("星期二");
+		} else if(week == 3) {
+			System.out.println("星期三");
+		} else if(week == 4) {
+			System.out.println("星期四");
+		} else if(week == 5) {
+			System.out.println("星期五");
+		} else if(week == 6) {
+			System.out.println("星期六");
+		} else {
+			System.out.println("星期日");
+		}
+			System.out.println("结束");
+	}
+}
+```
+
+
+
+##### 2.9.2.2 switch语句
+
+```java
+格式：
+switch(表达式) {
+	case 值1：
+ 		语句体1;
+ 		break;
+  	case 值2：
+		语句体2;
+ 		break;
+ 		 …
+  	default： 
+ 		语句体n+1;
+ 		[break;]
+}
+```
+
+格式说明：
+
+表达式：取值为byte、short、int、char，JDK5以后可以是枚举，JDK7以后可以是String。
+
+case：后面跟的是要和表达式进行比较的值。
+
+break：表示中断，结束的意思，用来结束switch语句。
+
+default：表示所有情况都不匹配的时候，就执行该处的内容，和if语句的else相似。
+
+执行流程：
+
+① 首先计算表达式的值。
+
+② 依次和case后面的值进行比较，如果有对应的值，就会执行相应的语句，在执行的过程中，遇到break就会结束。
+
+③ 如果所有的case后面的值和表达式的值都不匹配，就会执行default里面的语句体，然后程序结束掉。
+
+![image-20201231125847906](./image/image-20201231125847906.png)
+
+
+
+#### 2.9.3 循环结构
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/processcontrol/LoopStructure.java)
+
+for
+
+while
+
+do…while
+
+
 
 方法的定义、调用、重载
 
 数组
+
+### 2.10 数据输入
+
+我们目前程序中的数据都是固定的，程序不够灵活，为了提高程序的灵活性，我们也需要把数据的来源改进为输入数据。而我们目前所学的知识还比较少，不能够自己实现这个操作，只能够使用Java提供给我们的专门用于获取用户录入数据的类Scanner。
+
+![image-20201231114357685](./image/image-20201231114357685.png)
+
+#### 2.10.1 Scanner使用的基本步骤
+
+1. 导包
+
+import java.util.Scanner;
+
+导包的动作必须出现在类定义的上边
+
+2. 创建对象
+
+Scanner sc = new Scanner(System.in);
+
+上面这个格式里面，只有sc是变量名，可以变，其他的都不允许变。
+
+3. 接收数据
+
+int i=sc.nextInt();
+
+上面这个格式里面，只有 i 是变量名，可以变，其他的都不允许变。
+
+```java
+import java.util.Scanner;
+public class ScannerDemo {
+public static void main(String[] args) {
+		//创建对象
+		Scanner sc = new Scanner(System.in);
+		//接收数据
+		int x = sc.nextInt();
+		//输出数据
+		System.out.println("x:" + x);
+	}
+}
+```
+
+
 
 ## 三、面向对象
 

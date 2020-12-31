@@ -1,4 +1,4 @@
-package src.java.basic;
+package src.java.basic.notes;
 
 /**
  * @author : zgf
@@ -25,6 +25,6 @@ public class JavaNotes {
     */
     public static void main(String[] args) {
         // 这是输出语句，""里面的内容是可以改变的
-        System.out.println("itheima");
+        System.out.println("Java注释");
     }
 }
