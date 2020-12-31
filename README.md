@@ -1472,21 +1472,271 @@ do..while以分号结尾，整体描述一个完整的do..while语句
 
 
 
-2.9.3.7 
+### 2.10 数组
+
+#### 2.10.1 什么是数组
+
+数组就是存储数据长度固定的容器，存储多个数据的数据类型要一致。
+
+- 一次性声明大量的用于存储数据的变量
+- 要存储的数据通常都是同类型数据，例如：考试成绩
+
+#### 2.10.2 数组定义格式
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/array/ArrayNamed.java)
+
+格式一：数据类型 [ ]  变量名
+
+```java
+int[] arr;
+double[] arr;
+char[] arr;
+```
+
+定义了一个int类型的数组，数组名是arr
+
+格式二：数据类型    变量名[ ]
+
+```java
+int arr[];
+double arr[];
+char arr[];
+```
+
+定义了一个int类型的变量，变量名是arr数组
+
+#### 2.10.3 数组初始化
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/array/ArrayTest2.java)
+
+Java中的数组必须先初始化,然后才能使用
+
+所谓初始化：就是为数组中的数组元素分配内存空间，并为每个数组元素赋值
+
+#### 2.10.3.1 动态
+
+动态初始化：初始化时只指定数组长度，由系统为数组分配初始值
+
+格式：数据类型 [ ] 变量名 = new 数据类型[数组长度];
+
+```java
+范例：int [ ] arr  = new int[3];
+```
+
+等号左边：
+int:数组的数据类型
+[]:代表这是一个数组
+arr:代表数组的名称
+等号右边：
+new:为数组开辟内存空间
+int:数组的数据类型
+[]:代表这是一个数组
+3:代表数组的长度
+
+#### 2.10.3.2 静态
+
+静态初始化：初始化时指定每个数组元素的初始值，由系统决定数组长度
+
+格式：数据类型 [ ] 变量名 = new  数据类型[ ] { 数据1 , 数据2 , 数据3 , ……} ;
+
+```java
+范例：int [ ] arr = new int[ ] { 1 , 2 , 3 } ;
+```
+
+简化格式：数据类型 [ ] 变量名 = { 数据1 , 数据2 , 数据3 , ……} ;
+
+```java
+范例：int [ ] arr = { 1 , 2 , 3 } ;
+```
+
+#### 2.10.4 数组元素访问
+
+数组变量访问方式
+
+```java
+格式：数组名
+```
+
+数组内部保存的数据的访问方式
+
+```java
+格式：数组名[索引]
+```
+
+索引是什么？
+
+索引是数组中数据的编号方式
+
+作用：索引用于访问数组中的数据使用，数组名[索引]等同于变量名，是一种特殊的变量名
+
+特征 ① ：索引从0开始
+
+特征 ② ：索引是连续的
+
+特征 ③ ：索引逐一增加，每次加1
+
+![image-20201231150139065](./image/image-20201231150139065.png)
+
+计算机中习惯编号从0开始
+
+![image-20201231150216547](./image/image-20201231150216547.png)
+
+常见问题：
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/array/ArrayError.java)
+
+1. 索引越界：访问了数组中不存在的索引对应的元素，造成索引越界问题
+
+```java
+public class ArrayDemo {
+	public static void main(String[] args) {
+		int[] arr = new int[3];
+		System.out.println(arr[3]);
+	}
+}
+```
+
+数组长度为3，索引范围是0~2，但是我们却访问了一个3的索引。
+程序运行后，将会抛出ArrayIndexOutOfBoundsException 数组越界异常。在开发中，数组的越界异常是不
+能出现的，一旦出现了，就必须要修改我们编写的代码。
+
+解决方案:将错误的索引修改为正确的索引范围即可！
+
+2. 空指针异常：访问的数组已经不再指向堆内存的数据，造成空指针异常
+
+```java
+public class ArrayDemo {
+	public static void main(String[] args) {
+		int[] arr = new int[3];
+		//把null赋值给数组
+		arr = null;
+		System.out.println(arr[0]);
+	}
+}
+```
+
+arr = null 这行代码，意味着变量arr将不会在保存数组的内存地址，也就不允许再操作数组了，因此运行的时候会抛出 NullPointerException 空指针异常。在开发中，数组的越界异常是不能出现的，一旦出现了，就必须要修改我们编写的代码。
+解决方案：给数组一个真正的堆内存空间引用即可！
+
+3. null：空值，引用数据类型的默认值，表示不指向任何有效对象
+
+#### 2.10.5 内存分配
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/array/ArrayTest3.java)
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/array/ArrayTest4.java)
+
+内存是计算机中的重要原件，临时存储区域，作用是运行程序。
+我们编写的程序是存放在硬盘中的，在硬盘中的程序是不会运行的。
+必须放进内存中才能运行，运行完毕后会清空内存。
+Java虚拟机要运行程序，必须要对内存进行空间的分配和管理。
+
+Java 程序在运行时，需要在内存中分配空间。为了提高运算效率，就对空间进行了不同区域的划分，因为每一片区域都有特定的处理数据方式和内存管理方式。
+
+![image-20201231150328348](./image/image-20201231150328348.png)
+
+|  区域名称  |                            作用                            |
+| :--------: | :--------------------------------------------------------: |
+|   寄存器   |                给CPU使用，和我们开发无关。                 |
+| 本地方法栈 |     JVM在使用操作系统功能的时候使用，和我们开发无关。      |
+|   方法区   |                 存储可以运行的class文件。                  |
+|   堆内存   |       存储对象或者数组，new来创建的，都存储在堆内存        |
+|   栈方法   | 方法运行时使用的内存，比如main方法运行，进入方法栈中执行。 |
 
 
 
-方法的定义、调用、重载
+- 栈内存：存储局部变量
 
-数组
+  定义在方法中的变量，例如：arr
 
-### 2.10 数据输入
+  使用完毕，立即消失
+
+- 堆内存：存储new出来的内容(实体，对象)
+
+  数组在初始化时，会为存储空间添加默认值
+
+   	整数：0
+
+   	浮点数：0.0
+
+   	布尔：false
+
+   	字符：空字符
+
+   	引用数据类型：null
+
+  每一个new出来的东西都有一个地址值
+
+  使用完毕，会在垃圾回收器空闲时被回收
+
+#### 2.10.6 数组常见操作
+
+##### 2.10.6.1 遍历
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/array/ArrayTraversal.java)
+
+```java
+public class ArrayTest01 {
+	public static void main(String[] args) {
+		//定义数组
+		int[] arr = {11, 22, 33, 44, 55};
+		//使用通用的遍历格式
+		for(int x=0; x<arr.length; x++) {
+			System.out.println(arr[x]);
+		}
+	}
+}
+```
+
+##### 2.10.6.2 获取数组元素数量
+
+```java
+int[] arr = {11, 22, 33, 44, 55};
+arr.length
+```
+
+##### 2.10.6.3 数组最值
+
+[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/array/ArrayMinMax.java)
+
+最大值获取：从数组的所有元素中找出最大值。
+实现思路：
+	定义变量，保存数组0索引上的元素
+	遍历数组，获取出数组中的每个元素
+	将遍历到的元素和保存数组0索引上值的变量进行比较
+	如果数组元素的值大于了变量的值，变量记录住新的值
+	数组循环遍历结束，变量保存的就是数组中的最大值
+代码实现：
+
+```java
+public class ArrayTest02 {
+	public static void main(String[] args) {
+		//定义数组
+		int[] arr = {12, 45, 98, 73, 60};
+		//定义一个变量，用于保存最大值
+		//取数组中第一个数据作为变量的初始值
+		int max = arr[0];
+		//与数组中剩余的数据逐个比对，每次比对将最大值保存到变量中
+		for(int x=1; x<arr.length; x++) {
+			if(arr[x] > max) {
+				max = arr[x];
+   			 }
+		}
+		//循环结束后打印变量的值
+		System.out.println("max:" + max);
+}
+}
+```
+
+### 2.11 方法
+
+### 2.12 数据输入
 
 我们目前程序中的数据都是固定的，程序不够灵活，为了提高程序的灵活性，我们也需要把数据的来源改进为输入数据。而我们目前所学的知识还比较少，不能够自己实现这个操作，只能够使用Java提供给我们的专门用于获取用户录入数据的类Scanner。
 
 ![image-20201231114357685](./image/image-20201231114357685.png)
 
-#### 2.10.1 Scanner使用的基本步骤
+#### 2.12.1 Scanner使用的基本步骤
 
 1. 导包
 
@@ -1520,7 +1770,7 @@ public static void main(String[] args) {
 }
 ```
 
-#### 2.10.2 Random
+#### 2.12.2 Random
 
 [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/input/DataRandom.java)
 
