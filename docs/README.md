@@ -1,50 +1,48 @@
-<div align=center>
+## 本地编译环境
 
-![1](https://gitee.com/zgf1366/pic_store/raw/master/img/20210129174506.jpg)       
+Markdown编辑器使用[Typora](https://typora.io/)
 
-</div>                     
+主题使用[Drake](https://theme.typora.io/theme/Drake/)
 
-
-## 写在前面
-
-
-- 本地编译环境：
-
-  - Markdown编辑器使用[Typora](https://typora.io/)
-  
-    - 主题使用[Drake](https://theme.typora.io/theme/Drake/)
+------
 
 
 
+## 在线编译环境
 
-- 在线编译环境：
+- [Docsify](https://docsify.js.org/#/)
+- [Github Page](https://pages.github.com/)
+- 基于[Gitee](https://gitee.com/)搭建的图床（[传送门](https://nicolas-gaofeng.github.io/Salute_Docsify/#/pic/pic)）
 
-   - [Docsify](https://docsify.js.org/#/)
-   - [Github Page](https://pages.github.com/)
-   - 基于[Gitee](https://gitee.com/)搭建的图床（[传送门](https://nicolas-gaofeng.github.io/Salute_Docsify/#/pic/pic)）
-   
-   
-   
-- 我的联系方式：
-
-   - gaofeng_zgf@163.com
-
-   - nicolasgaofeng@gmail.com
-
-   
+------
 
 
-- 仓库说明：
 
-  - 这是一份自己学习Java从入门到跑路的记录。
-  - 内容还在不断更新中。
-  - 如果本仓库存在的内容对您和您的利益产生损害，请立即私信，我们将在最短时间内对其做出处理。
-  
+## 我的联系方式
 
-  
-- 鸣谢：
+- **微信**：
 
-  如果文中出现错误，请与我联系。向你敬礼！
+  intereting1366
+
+- **邮箱**：
+
+  gaofeng_zgf@163.com
+
+  nicolasgaofeng@gmail.com
+
+------
+
+
+
+## 仓库说明
+
+- 这是一份本人学习Java从入门到跑路的记录。
+- 内容还在不断更新中。
+- 如果本仓库存在的内容对您和您的利益产生损害，请立即私信，我们将在最短时间内对其做出处理。
+
+------
+
+
 
 ## 其他学习路径
 
@@ -87,8 +85,15 @@
 
 - [菜鸟学习IT路上遇到的问题](https://github.com/Nicolas-gaofeng/Salute_Problem)
 
-## 访问地址
+------
 
--  在线访问地址：
 
-​	https://nicolas-gaofeng.github.io/Salute_Java/
+
+## 鸣谢
+
+如果文中出现错误，请与我联系。向你敬礼！
+
+
+
+> [Salute_Java](https://github.com/Nicolas-gaofeng/Salute_Java) ©2021 Powered By [docsify](https://github.com/docsifyjs/docsify/).
+
