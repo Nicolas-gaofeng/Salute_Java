@@ -11,8 +11,7 @@
 - 本地编译环境：
 
   - Markdown编辑器使用[Typora](https://typora.io/)
-  
-    - 主题使用[Drake](https://theme.typora.io/theme/Drake/)
+  - 主题使用[Drake](https://theme.typora.io/theme/Drake/)
 
 
 
