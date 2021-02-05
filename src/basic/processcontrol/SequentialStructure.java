@@ -1,4 +1,4 @@
-package src.java.basic.processcontrol;
+package src.basic.processcontrol;
 
 /**
  * @author : zgf

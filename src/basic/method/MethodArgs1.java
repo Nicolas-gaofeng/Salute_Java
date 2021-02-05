@@ -1,4 +1,4 @@
-package src.java.basic.method;
+package src.basic.method;
 
 /**
  * @author : zgf

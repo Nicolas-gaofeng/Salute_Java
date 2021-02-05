@@ -1,4 +1,4 @@
-package src.java.basic.bug;
+package src.basic.bug;
 
 /*
     Debug：
@@ -14,14 +14,14 @@ package src.java.basic.bug;
  */
 public class DebugDemo {
     public static void main(String[] args) {
-        //定义两个变量
+        // 定义两个变量
         int i = 10;
         int j = 20;
 
-        //求和
+        // 求和
         int sum = i + j;
 
-        //输出结果
+        // 输出结果
         System.out.println("sum:" + sum);
     }
 }

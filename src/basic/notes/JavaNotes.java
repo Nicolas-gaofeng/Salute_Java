@@ -1,4 +1,4 @@
-package src.java.basic.notes;
+package src.basic.notes;
 
 /**
  * @author : zgf

@@ -1,4 +1,4 @@
-package src.java.basic.processcontrol;
+package src.basic.processcontrol;
 
 /**
  * @author : zgf
@@ -7,64 +7,38 @@ package src.java.basic.processcontrol;
  */
 
 public class LoopStructureDiff {
-    public static void main(String[] args) {
-        /*
-		//for循环
-		for(int i = 3; i<3; i++) {
-			System.out.println("我爱Java");
-		}
-		System.out.println("--------");
+	public static void main(String[] args) {
+		/*
+		 * //for循环 for(int i = 3; i<3; i++) { System.out.println("我爱Java"); }
+		 * System.out.println("--------");
+		 * 
+		 * //while循环 int j = 3; while(j<3) { System.out.println("我爱Java"); j++; }
+		 * System.out.println("--------");
+		 * 
+		 * //do...while循环 int k = 3; do { System.out.println("我爱Java"); k++;
+		 * }while(k<3);
+		 */
 
-		//while循环
-		int j = 3;
-		while(j<3) {
-			System.out.println("我爱Java");
-			j++;
-		}
-		System.out.println("--------");
+		/*
+		 * //for循环 for(int i = 1; i<3; i++) { System.out.println("我爱Java"); }
+		 * //System.out.println(i); System.out.println("--------");
+		 * 
+		 * //while循环 int j = 1; while(j<3) { System.out.println("我爱Java"); j++; }
+		 * System.out.println(j); System.out.println("--------");
+		 */
 
-		//do...while循环
-		int k = 3;
+		// 死循环
+		/*
+		 * for(;;) { System.out.println("for"); }
+		 */
+
+		/*
+		 * while(true) { System.out.println("while"); }
+		 */
+
 		do {
-			System.out.println("我爱Java");
-			k++;
-		}while(k<3);
-		*/
+			System.out.println("do...while");
+		} while (true);
 
-		/*
-		//for循环
-		for(int i = 1; i<3; i++) {
-			System.out.println("我爱Java");
-		}
-		//System.out.println(i);
-		System.out.println("--------");
-
-		//while循环
-		int j = 1;
-		while(j<3) {
-			System.out.println("我爱Java");
-			j++;
-		}
-		System.out.println(j);
-		System.out.println("--------");
-		*/
-
-        //死循环
-		/*
-		for(;;) {
-			System.out.println("for");
-		}
-		*/
-
-		/*
-		while(true) {
-			System.out.println("while");
-		}
-		*/
-
-        do {
-            System.out.println("do...while");
-        } while (true);
-
-    }
+	}
 }

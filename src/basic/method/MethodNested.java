@@ -1,4 +1,4 @@
-package src.java.basic.method;
+package src.basic.method;
 
 /**
  * @author : zgf
@@ -16,11 +16,11 @@ public class MethodNested {
     }
 
     public static void methodTwo() {
-        //return 100;
+        // return 100;
 
         return;
 
-        //System.out.println(100);
+        // System.out.println(100);
     }
 
 }

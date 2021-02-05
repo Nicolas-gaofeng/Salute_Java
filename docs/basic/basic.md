@@ -1,6 +1,6 @@
 ## 一、HelloWorld
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/helloworld/HelloWorld.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/helloworld/HelloWorld.java)
 
 HelloWorld案例是指在计算机屏幕上输出“HelloWorld”这行文字。各种计算机语言都习惯使用该案例作为第一个演示案例。
 
@@ -27,7 +27,7 @@ HelloWorld案例的编译和运行
 
 ## 二、Bug
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/bug/JavaBug.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/bug/JavaBug.java)
 
 在电脑系统或程序中，隐藏着的一些未被发现的缺陷或问题统称为bug（漏洞）。
 
@@ -42,9 +42,9 @@ HelloWorld案例的编译和运行
 
 **Debug**
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/bug/DebugTest01.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/bug/DebugTest01.java)
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/bug/DebugTest02.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/bug/DebugTest02.java)
 
 Debug：是供程序员使用的程序调试工具，它可以用于查看程序的执行流程，也可以用于追踪程序执行过程来调试程序。
 
@@ -98,7 +98,7 @@ Debug调试，又被称为断点调试，断点其实是一个标记，告诉我
 
 ## 三、注释
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/notes/JavaNotes.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/notes/JavaNotes.java)
 
 注释是对代码的解释和说明文字，可以提高程序的可读性，因此在程序中添加必要的注释文字十分重要。
 
@@ -206,7 +206,7 @@ Java是一个强类型语言，Java中的数据必须明确数据类型，不同
 
 ### 5.4 类型转换
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/conversion/JavaConversion.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/conversion/JavaConversion.java)
 
 在Java中，一些数据类型之间是可以相互转换的。分为两种情况：自动类型转换和强制类型转换。
 
@@ -261,7 +261,7 @@ byte b3 = (byte) (b1 + b2);
 
 ## 六、常量
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/constant/JavaConstant.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/constant/JavaConstant.java)
 
 在日常生活中，我们通常都用3.14代表圆周率去进行近似计算。只要用到圆周率的地方，我们使用的都是3.14，也就是说，这个值是固定不变的，这样的值就是我们说的常量。
 
@@ -282,7 +282,7 @@ byte b3 = (byte) (b1 + b2);
 
 ## 七、变量
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/variable/JavaVariable.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/variable/JavaVariable.java)
 
 ### 7.1 变量的定义
 
@@ -358,7 +358,7 @@ a + b：是表达式，由于 + 是算术运算符，所以这个表达式叫算
 
 ### 8.1 算术运算符
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/operator/ArithmeticOperators.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/operator/ArithmeticOperators.java)
 
 | 符号 | 作用 |             说明             |
 | :--: | :--: | :--------------------------: |
@@ -432,7 +432,7 @@ System.out.println(1 + 2 + "itheima" + (3 + 4)); // 输出：3itheima7
 
 ### 8.2 赋值运算符
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/operator/AssignmentOperators.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/operator/AssignmentOperators.java)
 
 | 符号 |    作用    |            说明            |
 | :--: | :--------: | :------------------------: |
@@ -455,7 +455,7 @@ s += 10; // 此行代码没有问题，隐含了强制类型转换，相当于 s
 
 ### 8.3 自增自减运算符
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/operator/SelfIncreasingDecreasingOperators.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/operator/SelfIncreasingDecreasingOperators.java)
 
 | 符号 | 作用 |    说明     |
 | :--: | :--: | :---------: |
@@ -502,7 +502,7 @@ System.out.println(y); // y的值是多少？
 
 ### 8.4 关系运算符
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/operator/RelationalOperators.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/operator/RelationalOperators.java)
 
 | 符号 |                             说明                             |
 | :--: | :----------------------------------------------------------: |
@@ -535,7 +535,7 @@ System.out.println(flag); // 输出false
 
 ### 8.5 逻辑运算符
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/operator/LogicalOperators.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/operator/LogicalOperators.java)
 
 逻辑运算符把各个运算的关系表达式连接起来组成一个复杂的逻辑表达式，以判断程序中的表达式是否成立，判断的结果是 true 或 false。
 
@@ -616,8 +616,7 @@ System.out.println(y); // 4
 
 ### 8.6 三元运算符
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/operator/TernaryOperators.java)
->
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/operator/TernaryOperators.java)
 
 ```java
 格式：关系表达式 ? 表达式1 : 表达式2
@@ -645,7 +644,7 @@ int c = a > b ? a : b; // 判断 a>b 是否为真，如果为真取a的值，如
 
 ### 9.1 顺序结构
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/processcontrol/SequentialStructure.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/processcontrol/SequentialStructure.java)
 
 顺序结构是程序中最简单最基本的流程控制，没有特定的语法结构，按照代码的先后顺序，依次执行，程序中大多数的代码都是这样执行的。
 
@@ -657,7 +656,7 @@ int c = a > b ? a : b; // 判断 a>b 是否为真，如果为真取a的值，如
 
 #### 9.2.1 if语句
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/processcontrol/BranchingStructureIf.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/processcontrol/BranchingStructureIf.java)
 
 1. if语句格式 1
 
@@ -810,7 +809,7 @@ public class IfDemo03 {
 
 #### 9.2.2 switch语句
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/processcontrol/BranchingStructureSwitch.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/processcontrol/BranchingStructureSwitch.java)
 
 ```java
 格式：
@@ -878,7 +877,7 @@ default：表示所有情况都不匹配的时候，就执行该处的内容，�
 
 #### 9.3.1 for
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/processcontrol/LoopStructureFor.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/processcontrol/LoopStructureFor.java)
 
 格式：
 
@@ -908,7 +907,7 @@ for(初始化语句;条件判断语句;条件控制语句) {
 
 #### 9.3.2 while
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/processcontrol/LoopStructureWhile.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/processcontrol/LoopStructureWhile.java)
 
 完整格式：
 
@@ -940,7 +939,7 @@ while(条件判断语句) {
 
 #### 9.3.3 do…while
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/processcontrol/LoopStructureDoWhile.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/processcontrol/LoopStructureDoWhile.java)
 
 完整格式：
 
@@ -972,7 +971,7 @@ do {
 
 #### 9.3.4 三种循环的区别
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/processcontrol/LoopStructureDiff.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/processcontrol/LoopStructureDiff.java)
 
 三种循环的区别：
 
@@ -998,7 +997,7 @@ while的死循环格式是最常用的
 
 #### 9.3.5 跳转控制语句
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/processcontrol/LoopStructureControl.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/processcontrol/LoopStructureControl.java)
 
 `continue：`
 
@@ -1018,7 +1017,7 @@ while的死循环格式是最常用的
 
 #### 9.3.6 循环嵌套
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/processcontrol/LoopStructureNestedLoop.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/processcontrol/LoopStructureNestedLoop.java)
 
 循环嵌套概述：在循环中，继续定义循环
 
@@ -1065,7 +1064,7 @@ do..while以分号结尾，整体描述一个完整的do..while语句
 
 ### 10.2 数组定义格式
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/array/ArrayNamed.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/array/ArrayNamed.java)
 
 格式一：数据类型 [ ]  变量名
 
@@ -1089,7 +1088,7 @@ char arr[];
 
 ### 10.3 数组初始化
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/array/ArrayTest2.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/array/ArrayTest2.java)
 
 Java中的数组必须先初始化,然后才能使用
 
@@ -1165,7 +1164,7 @@ int:数组的数据类型
 
 常见问题：
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/array/ArrayError.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/array/ArrayError.java)
 
 1. 索引越界：访问了数组中不存在的索引对应的元素，造成索引越界问题
 
@@ -1204,9 +1203,9 @@ arr = null 这行代码，意味着变量arr将不会在保存数组的内存地
 
 ### 10.5 内存分配
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/array/ArrayTest3.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/array/ArrayTest3.java)
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/array/ArrayTest4.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/array/ArrayTest4.java)
 
 内存是计算机中的重要原件，临时存储区域，作用是运行程序。
 我们编写的程序是存放在硬盘中的，在硬盘中的程序是不会运行的。
@@ -1255,9 +1254,9 @@ Java 程序在运行时，需要在内存中分配空间。为了提高运算效
 
 #### 10.6.1 遍历
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/array/ArrayTraversal.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/array/ArrayTraversal.java)
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/method/ArrayTraversalMethod.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/method/ArrayTraversalMethod.java)
 
 ```java
 public class ArrayTest01 {
@@ -1281,9 +1280,9 @@ arr.length
 
 #### 10.6.3 数组最值
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/array/ArrayMinMax.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/array/ArrayMinMax.java)
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/method/MaxArrayMethod.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/method/MaxArrayMethod.java)
 
 最大值获取：从数组的所有元素中找出最大值。
 实现思路：
@@ -1332,9 +1331,9 @@ public class ArrayTest02 {
 
 ### 11.2 方法的定义和调用
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/method/MethodDefined2.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/method/MethodDefined2.java)
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/method/MethodDefined1.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/method/MethodDefined1.java)
 
 定义格式： public static void 名 ( ) {
 
@@ -1360,9 +1359,9 @@ public class ArrayTest02 {
 
 ### 11.3 带参数方法的定义和调用
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/method/MethodArgs1.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/method/MethodArgs1.java)
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/method/MethodArgs2.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/method/MethodArgs2.java)
 
 格式：public static void 方法名 ( 参数 ) { … … }
 
@@ -1397,9 +1396,9 @@ public class ArrayTest02 {
 
 `形参和实参`
 
-[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/method/MethodArgs1.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/method/MethodArgs1.java)
 
-[程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/method/MethodArgsS.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/method/MethodArgsS.java)
 
 形参：方法定义中的参数等同于变量定义格式，例如：int number
 
@@ -1459,7 +1458,7 @@ boolean flag = isEvenNumber ( 5 );
 
 1. 方法不能嵌套定义
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/method/MethodNested.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/method/MethodNested.java)
 
 ![image-20201231154845614](https://gitee.com/zgf1366/pic_store/raw/master/img/20210129185652.png)
 
@@ -1497,9 +1496,9 @@ boolean flag = isEvenNumber ( 5 );
 
 ### 11.6 方法重载
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/method/MethodOverload1.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/method/MethodOverload1.java)
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/method/MethodOverload2.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/method/MethodOverload2.java)
 
 方法重载指同一个类中定义的多个方法之间的关系，满足下列条件的多个方法相互构成重载
 
@@ -1579,6 +1578,8 @@ public class MethodDemo02 {
 
 ## 十二、数据输入
 
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/input/DataInput.java)
+
 我们目前程序中的数据都是固定的，程序不够灵活，为了提高程序的灵活性，我们也需要把数据的来源改进为输入数据。而我们目前所学的知识还比较少，不能够自己实现这个操作，只能够使用Java提供给我们的专门用于获取用户录入数据的类Scanner。
 
 ![image-20201231114357685](https://gitee.com/zgf1366/pic_store/raw/master/img/20210129185838.png)
@@ -1619,7 +1620,7 @@ public static void main(String[] args) {
 
 ### 12.2 Random
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/input/DataRandom.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/input/DataRandom.java)
 
 作用：用于产生一个随机数
 
@@ -1650,9 +1651,9 @@ int number = r.nextInt(10);//获取数据的范围：[0,10)包括0,不包括10
 
 ### 13.1 减肥计划
 
-> [if版程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/practice/Test01.java)
+> [if版程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/practice/Test01.java)
 
-> [switch版程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/practice/Test02.java)
+> [switch版程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/practice/Test02.java)
 
 需求：输入星期数，显示今天的减肥活动
 
@@ -1680,7 +1681,7 @@ int number = r.nextInt(10);//获取数据的范围：[0,10)包括0,不包括10
 
 ### 13.2 逢七过
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/practice/Test03.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/practice/Test03.java)
 
 需求：朋友聚会的时候可能会玩一个游戏：逢七过。规则是：从任意一个数字开始报数，当你要报的数字包含7或者是7的倍数时都要说：过。为了帮助大家更好的玩这个游戏，这里我们直接在控制台打印出1-100之间的满足逢七必过规则的数据。
 
@@ -1698,7 +1699,7 @@ x%10 == 7 x/10%10 == 7 x%7==0
 
 ### 13.3 不死神兔
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/practice/Test04.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/practice/Test04.java)
 
 需求：有一对兔子，从出生后第3个月起每个月都生一对兔子，小兔子长到第三个月后每个月又生一对兔子，假如兔子都不死，问第二十个月的兔子对数为多少？
 
@@ -1754,7 +1755,7 @@ for(int x=?; x<?; x++){
 
 ### 13.4 百钱百鸡
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/practice/Test05.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/practice/Test05.java)
 
 需求：我国古代数学家张丘建在《算经》一书中提出的数学问题：鸡翁一值钱五，鸡母一值钱三，鸡雏三值钱一。百钱买百鸡，问鸡翁、鸡母、鸡雏各几何？
 
@@ -1792,7 +1793,7 @@ x + y+ z = 100;
 
 ### 13.5 数组元素求和
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/practice/Test06.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/practice/Test06.java)
 
 需求：有这样的一个数组，元素是{68,27,95,88,171,996,51,210}。求出该数组中满足要求的元素和，要求是：求和的元素个位和十位都不能是7，并且只能是偶数
 
@@ -1812,7 +1813,7 @@ arr[x]%10 != 7 arr[x]/10%10 != 7 arr[x]%2 == 0
 
 ### 13.6 数组内容相同 
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/practice/Test07.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/practice/Test07.java)
 
 需求：设计一个方法，用于比较两个数组的内容是否相同
 
@@ -1840,7 +1841,7 @@ arr[x]%10 != 7 arr[x]/10%10 != 7 arr[x]%2 == 0
 
 ### 13.7 查找 
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/practice/Test08.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/practice/Test08.java)
 
 需求：已知一个数组 arr = {19, 28, 37, 46, 50}; 键盘录入一个数据，查找该数据在数组中的索引，并在控制台输出找到的索引值。
 
@@ -1868,7 +1869,7 @@ arr[x]%10 != 7 arr[x]/10%10 != 7 arr[x]%2 == 0
 
 ### 13.8 反转
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/practice/Test09.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/practice/Test09.java)
 
 需求：已知一个数组 arr = {19, 28, 37, 46, 50}; 用程序实现把数组中的元素值交换， 
 
@@ -1904,7 +1905,7 @@ arr[x]%10 != 7 arr[x]/10%10 != 7 arr[x]%2 == 0
 
 ### 13.9 评委打分
 
-> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/java/basic/practice/Test10.java)
+> [程序练习](https://github.com/Nicolas-gaofeng/Salute_Java/blob/main/src/basic/practice/Test10.java)
 
 需求：在编程竞赛中，有6个评委为参赛的选手打分，分数为0-100的整数分。
 

@@ -1,4 +1,4 @@
-package src.java.basic.helloworld;
+package src.basic.helloworld;
 
 /**
  * @author : zgf

@@ -1,4 +1,4 @@
-package src.java.basic.array;
+package src.basic.array;
 
 /**
  * @author : zgf
@@ -8,7 +8,7 @@ package src.java.basic.array;
 
 public class ArrayTest4 {
     public static void main(String[] args) {
-        //定义一个数组
+        // 定义一个数组
         int[] arr = new int[3];
         arr[0] = 100;
         arr[1] = 200;
@@ -18,12 +18,12 @@ public class ArrayTest4 {
         System.out.println(arr[1]);
         System.out.println(arr[2]);
 
-        //定义第二个数组指向第一个数组
+        // 定义第二个数组指向第一个数组
         int[] arr2 = arr;
         arr2[0] = 111;
         arr2[1] = 222;
         arr2[2] = 333;
-        //输出两个数组的名及元素
+        // 输出两个数组的名及元素
         System.out.println(arr);
         System.out.println(arr[0]);
         System.out.println(arr2);

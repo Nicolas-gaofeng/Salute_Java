@@ -1,4 +1,4 @@
-package src.java.basic.method;
+package src.basic.method;
 
 /**
  * @author : zgf
@@ -8,7 +8,7 @@ package src.java.basic.method;
 
 public class MethodArgsS {
     public static void main(String[] args) {
-        int[] arr = {10, 20, 30};
+        int[] arr = { 10, 20, 30 };
         System.out.println("调用change方法前：" + arr[1]);
         change(arr);
         System.out.println("调用change方法后：" + arr[1]);

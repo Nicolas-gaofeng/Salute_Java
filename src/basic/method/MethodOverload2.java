@@ -1,4 +1,4 @@
-package src.java.basic.method;
+package src.basic.method;
 
 /**
  * @author : zgf
@@ -8,7 +8,7 @@ package src.java.basic.method;
 
 public class MethodOverload2 {
     public static void main(String[] args) {
-        //调用方法
+        // 调用方法
         int result = sum(10, 20);
         System.out.println(result);
 
@@ -19,17 +19,17 @@ public class MethodOverload2 {
         System.out.println(result3);
     }
 
-    //需求1：求两个int类型数据和的方法
+    // 需求1：求两个int类型数据和的方法
     public static int sum(int a, int b) {
         return a + b;
     }
 
-    //需求2：求两个double类型数据和的方法
+    // 需求2：求两个double类型数据和的方法
     public static double sum(double a, double b) {
         return a + b;
     }
 
-    //需求3：求三个int类型数据和的方法
+    // 需求3：求三个int类型数据和的方法
     public static int sum(int a, int b, int c) {
         return a + b + c;
     }
