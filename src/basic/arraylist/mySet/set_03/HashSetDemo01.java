@@ -1,4 +1,5 @@
 package src.basic.arraylist.mySet.set_03;
+
 import java.util.HashSet;
 
 /*
@@ -10,18 +11,18 @@ import java.util.HashSet;
  */
 public class HashSetDemo01 {
     public static void main(String[] args) {
-        //创建集合对象
+        // 创建集合对象
         HashSet<String> hs = new HashSet<String>();
 
-        //添加元素
+        // 添加元素
         hs.add("hello");
         hs.add("world");
         hs.add("java");
 
         hs.add("world");
 
-        //遍历
-        for(String s : hs) {
+        // 遍历
+        for (String s : hs) {
             System.out.println(s);
         }
     }

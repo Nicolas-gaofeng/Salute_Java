@@ -12,10 +12,10 @@ import java.util.TreeSet;
  */
 public class TreeSetDemo01 {
     public static void main(String[] args) {
-        //创建集合对象
+        // 创建集合对象
         TreeSet<Integer> ts = new TreeSet<Integer>();
 
-        //添加元素
+        // 添加元素
         ts.add(10);
         ts.add(40);
         ts.add(30);
@@ -24,8 +24,8 @@ public class TreeSetDemo01 {
 
         ts.add(30);
 
-        //遍历集合
-        for(Integer i : ts) {
+        // 遍历集合
+        for (Integer i : ts) {
             System.out.println(i);
         }
     }

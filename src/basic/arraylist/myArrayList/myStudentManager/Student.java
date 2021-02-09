@@ -1,16 +1,17 @@
-package src.basic.arraylist.myStudentManager;
+package src.basic.arraylist.myArrayList.myStudentManager;
+
 /*
     学生类
     Alt+Insert  根据自己的需要进行选择
  */
 public class Student {
-    //学号
+    // 学号
     private String sid;
-    //姓名
+    // 姓名
     private String name;
-    //年龄
+    // 年龄
     private String age;
-    //居住地
+    // 居住地
     private String address;
 
     public Student() {

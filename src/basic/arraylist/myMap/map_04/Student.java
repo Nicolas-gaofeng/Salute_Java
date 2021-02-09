@@ -30,12 +30,15 @@ public class Student {
 
     @Override
     public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (this == o)
+            return true;
+        if (o == null || getClass() != o.getClass())
+            return false;
 
         Student student = (Student) o;
 
-        if (age != student.age) return false;
+        if (age != student.age)
+            return false;
         return name != null ? name.equals(student.name) : student.name == null;
     }
 

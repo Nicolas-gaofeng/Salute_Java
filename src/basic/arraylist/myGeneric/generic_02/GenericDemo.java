@@ -11,7 +11,7 @@ public class GenericDemo {
 
         Teacher t = new Teacher();
         t.setAge(30);
-//        t.setAge("30");
+        // t.setAge("30");
         System.out.println(t.getAge());
         System.out.println("--------");
 

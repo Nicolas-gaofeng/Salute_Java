@@ -8,19 +8,19 @@ import java.util.TreeSet;
  */
 public class TreeSetDemo02 {
     public static void main(String[] args) {
-        //创建集合对象
+        // 创建集合对象
         TreeSet<Student> ts = new TreeSet<Student>();
 
-        //创建学生对象
+        // 创建学生对象
         Student s1 = new Student("xishi", 29);
         Student s2 = new Student("wangzhaojun", 28);
         Student s3 = new Student("diaochan", 30);
         Student s4 = new Student("yangyuhuan", 33);
 
-        Student s5 = new Student("linqingxia",33);
-        Student s6 = new Student("linqingxia",33);
+        Student s5 = new Student("linqingxia", 33);
+        Student s6 = new Student("linqingxia", 33);
 
-        //把学生添加到集合
+        // 把学生添加到集合
         ts.add(s1);
         ts.add(s2);
         ts.add(s3);
@@ -28,7 +28,7 @@ public class TreeSetDemo02 {
         ts.add(s5);
         ts.add(s6);
 
-        //遍历集合
+        // 遍历集合
         for (Student s : ts) {
             System.out.println(s.getName() + "," + s.getAge());
         }

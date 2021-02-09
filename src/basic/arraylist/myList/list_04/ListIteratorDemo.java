@@ -18,32 +18,32 @@ import java.util.ListIterator;
  */
 public class ListIteratorDemo {
     public static void main(String[] args) {
-        //创建集合对象
+        // 创建集合对象
         List<String> list = new ArrayList<String>();
 
-        //添加元素
+        // 添加元素
         list.add("hello");
         list.add("world");
         list.add("java");
 
-        //通过List集合的listIterator​()方法得到
-//        ListIterator<String> lit = list.listIterator();
-//        while (lit.hasNext()) {
-//            String s = lit.next();
-//            System.out.println(s);
-//        }
-//        System.out.println("--------");
-//
-//        while (lit.hasPrevious()) {
-//            String s = lit.previous();
-//            System.out.println(s);
-//        }
+        // 通过List集合的listIterator​()方法得到
+        // ListIterator<String> lit = list.listIterator();
+        // while (lit.hasNext()) {
+        // String s = lit.next();
+        // System.out.println(s);
+        // }
+        // System.out.println("--------");
+        //
+        // while (lit.hasPrevious()) {
+        // String s = lit.previous();
+        // System.out.println(s);
+        // }
 
-        //获取列表迭代器
+        // 获取列表迭代器
         ListIterator<String> lit = list.listIterator();
         while (lit.hasNext()) {
             String s = lit.next();
-            if(s.equals("world")) {
+            if (s.equals("world")) {
                 lit.add("javaee");
             }
         }

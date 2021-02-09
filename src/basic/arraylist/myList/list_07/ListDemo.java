@@ -1,4 +1,5 @@
 package src.basic.arraylist.myList.list_07;
+
 import java.util.ArrayList;
 import java.util.LinkedList;
 
@@ -12,18 +13,18 @@ import java.util.LinkedList;
  */
 public class ListDemo {
     public static void main(String[] args) {
-        //创建集合对象
+        // 创建集合对象
         ArrayList<String> array = new ArrayList<String>();
 
         array.add("hello");
         array.add("world");
         array.add("java");
 
-        //遍历
+        // 遍历
         for (String s : array) {
             System.out.println(s);
         }
-        //剩下两种遍历方式大家补齐
+        // 剩下两种遍历方式大家补齐
         System.out.println("--------");
 
         LinkedList<String> linkedList = new LinkedList<String>();
@@ -32,9 +33,9 @@ public class ListDemo {
         linkedList.add("world");
         linkedList.add("java");
 
-        for(String s : linkedList) {
+        for (String s : linkedList) {
             System.out.println(s);
         }
-        //剩下两种遍历方式大家补齐
+        // 剩下两种遍历方式大家补齐
     }
 }
