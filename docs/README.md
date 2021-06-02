@@ -1,4 +1,4 @@
-## 本地编译环境
+## 1.1 本地编译环境
 
 Markdown编辑器使用[Typora](https://typora.io/)
 
@@ -8,7 +8,7 @@ Markdown编辑器使用[Typora](https://typora.io/)
 
 
 
-## 在线编译环境
+## 1.2 在线编译环境
 
 - [Docsify](https://docsify.js.org/#/)
 - [Github Page](https://pages.github.com/)
@@ -16,9 +16,11 @@ Markdown编辑器使用[Typora](https://typora.io/)
 
 ------
 
+## 1.3 代码地址
 
+ https://pan.baidu.com/s/1PlxG5Qnrm-lrfZg2b1FWxw 提取码：6666 
 
-## 我的联系方式
+## 1.4 我的联系方式
 
 - **微信**：
 
@@ -34,7 +36,7 @@ Markdown编辑器使用[Typora](https://typora.io/)
 
 
 
-## 仓库说明
+## 1.5 仓库说明
 
 - 这是一份本人学习Java从入门到跑路的记录。
 - 内容还在不断更新中。
@@ -44,7 +46,7 @@ Markdown编辑器使用[Typora](https://typora.io/)
 
 
 
-## 其他学习路径
+## 1.6 其他学习路径
 
 > 编程
 
@@ -89,7 +91,7 @@ Markdown编辑器使用[Typora](https://typora.io/)
 
 
 
-## 鸣谢
+## 1.7 鸣谢
 
 如果文中出现错误，请与我联系。向你敬礼！
 
