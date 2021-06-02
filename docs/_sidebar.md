@@ -4,17 +4,15 @@
 
 * [**三、概述**](Chapter3/1.md)
 
-* **四、java基础**
+* **四、Java基础**
 
   * [4.1 HelloWorld](Chapter4/1.md)
   
-  * [4.2 Bug](Chapter4/2.md)
+  * [4.2 注释](Chapter4/2.md)
   
-  * [4.3 注释](Chapter4/3.md)
+  * [4.3 命名规则](Chapter4/3.md)
   
-  * [4.4 命名规则](Chapter4/4.md)
-  
-  * [4.5 数据类型](Chapter4/5.md)
+  * [4.4 数据类型](Chapter4/4.md)
   
   * [4.6 常量](Chapter4/6.md)
   
